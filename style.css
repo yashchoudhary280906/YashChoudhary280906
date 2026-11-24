@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fce4ec 0%, #ffe0b2 100%);
+    transition: background 0.3s ease;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+}
+.toggle-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, background-color 0.3s;
+}
+.toggle-btn:hover {
+    transform: translateY(-1px);
+}
+.profile-card {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 32px 24px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s, color 0.3s;
+}
+.avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f5f5f5;
+    margin-bottom: 14px;
+}
+.student-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+.bio {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748b;
+    margin-bottom: 22px;
+}
+.highlight {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #334155;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-bottom: 22px;
+    transition: background-color 0.2s;
+}
+.contact-btn:hover {
+    background-color: #f1f5f9;
+}
+
+.contact-btn img {
+    width: 15px;
+    height: 15px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.social-icon:hover {
+    transform: translateY(-2px);
+    background-color: #e2e8f0;
+}
+.social-icon img {
+    width: 15px;
+    height: 15px;
+}
+body.dark-theme {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+body.dark-theme .toggle-btn {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+}
+body.dark-theme .profile-card {
+    background-color: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+body.dark-theme .avatar {
+    border-color: #334155;
+}
+body.dark-theme .student-name {
+    color: #f8fafc;
+}
+body.dark-theme .bio {
+    color: #94a3b8;
+}
+body.dark-theme .contact-btn,
+body.dark-theme .social-icon {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
